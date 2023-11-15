@@ -4,8 +4,6 @@ import './App.css';
 function Home () {
   return (
     <div className="Home">
-      <h1>Alexander Crisler</h1>
-      <p>Software Engineer</p>
       <h2>Experience</h2>
       <h3>Employment History:</h3>
       <ul>
@@ -40,10 +38,10 @@ function Home () {
 
 function NavBar () {
   return (
-    <div>
-      <button>Home</button>
-      <button>Blog</button>
-      <button>About</button>
+    <div class="navBar">
+      <button class="navButton">Home</button>
+      <button class="navButton">Blog</button>
+      <button class="navButton">About</button>
     </div>
   );
 }
@@ -51,6 +49,7 @@ function NavBar () {
 function App() {
   return (
     <div className="App">
+      <h1>Alexander Crisler</h1>
       <NavBar />
       <Home />
     </div>
