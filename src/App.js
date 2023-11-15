@@ -9,31 +9,41 @@ function Home () {
       <h2>Experience</h2>
       <h3>Employment History:</h3>
       <ul>
-        <li>
+        <ul>
           <p>DTN</p>
           <p>[timeframe]</p>
           <p>[description]</p>
-        </li>
-        <li>
+        </ul>
+        <ul>
           <p>Warpspeed</p>
           <p>[timeframe]</p>
           <p>[description]</p>
-        </li>
-        <li>
+        </ul>
+        <ul>
           <p>Netapp</p>
           <p>[timeframe]</p>
           <p>[description]</p>
-        </li>
+        </ul>
       </ul>
       <h3>Tools & Languages:</h3>
       <ul>
-        <li>Python</li>
-        <li>C/C++</li>
-        <li>Javascript</li>
-        <li>React</li>
-        <li>Unity</li>
+        <ul>Python</ul>
+        <ul>C/C++</ul>
+        <ul>Javascript</ul>
+        <ul>React</ul>
+        <ul>Unity</ul>
       </ul>
       <h3>Projects:</h3>
+    </div>
+  );
+}
+
+function NavBar () {
+  return (
+    <div>
+      <button>Home</button>
+      <button>Blog</button>
+      <button>About</button>
     </div>
   );
 }
@@ -41,21 +51,8 @@ function Home () {
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <Home />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
